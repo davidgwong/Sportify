@@ -1,0 +1,60 @@
+.banner {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.logo {
+    height: 100px;
+}
+
+.title {
+    padding-left: 20px;
+    font-size: 50px;
+    font-weight: 2;
+}
+
+.currentAlbum {
+    display: flex;
+    align-items: top;
+    margin: auto;
+}
+
+.albumCover {
+    height: 300px;
+    width: 300px;
+}
+
+.trackList {
+    padding-bottom: 10px;
+}
+
+.selectAlbum {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.selectAlbum:hover {
+    background-color: darkgreen;
+}
+
+.albumAvatar {
+    border-radius: 50%;
+    height: 50px;
+}
+
+.albumName {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.play {
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    background-color: #1DB954;
+    border-color: #1DB954;
+    cursor: pointer;
+}
