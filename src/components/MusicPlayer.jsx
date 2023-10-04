@@ -1,11 +1,12 @@
-export default function MusicPlayer() {
+export default function MusicPlayer({ track }) {
+  let trackUrl = "https://www.youtube.com/embed/" + track + "?autoplay=1";
   return (
     <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/seqaTuXkqFI?si=USqdPxNZ0kZa4Kua"
+      width="300"
+      height="300"
+      src={trackUrl}
       title="YouTube video player"
-      frameborder="0"
+      frameBorder="0"
       allow="accelerometer; 
         autoplay; 
         clipboard-write; 
@@ -13,7 +14,8 @@ export default function MusicPlayer() {
         gyroscope; 
         picture-in-picture; 
         web-share"
-      allowfullscreen
+      allowFullScreen
+      autoPlay="1"
     ></iframe>
   );
 }

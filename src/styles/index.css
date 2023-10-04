@@ -1,6 +1,12 @@
+* {
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", "Shantell Sans", cursive;
+}
+
 body {
   background-color: black;
   color: white;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  margin: 20px 30%;
+  margin: auto;
+  padding: 10px;
+  max-width: 800px;
 }

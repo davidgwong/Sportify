@@ -1,60 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
 .banner {
-    display: flex;
-    align-items: center;
-    padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
 }
 
 .logo {
-    height: 100px;
+  height: 100px;
 }
 
 .title {
-    padding-left: 20px;
-    font-size: 50px;
-    font-weight: 2;
+  padding-left: 20px;
+  font-size: 50px;
+  font-weight: 2;
 }
 
 .currentAlbum {
-    display: flex;
-    align-items: top;
-    margin: auto;
+  align-items: top;
+  margin: auto;
 }
 
 .albumCover {
-    height: 300px;
-    width: 300px;
+  height: 300px;
+  width: 300px;
+}
+
+.tracks {
+    padding: auto;
 }
 
 .trackList {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .selectAlbum {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
 .selectAlbum:hover {
-    background-color: darkgreen;
+  background-color: darkgreen;
 }
 
 .albumAvatar {
-    border-radius: 50%;
-    height: 50px;
+  border-radius: 50%;
+  height: 50px;
 }
 
 .albumName {
-    padding-left: 10px;
-    padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .play {
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    align-items: center;
-    background-color: #1DB954;
-    border-color: #1DB954;
-    cursor: pointer;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  background-color: #1db954;
+  border-color: #1db954;
+  cursor: pointer;
+}
+
+.col {
+  width: 300px 50%;
+  float: left;
+  padding: 15px;
+  margin: auto;
+  display: grid;
+}
+
+.row {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  margin: auto;
+  display: grid;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col"] {
+    width: 100%;
+    justify-items: center;
+  }
+  [class*="banner"] {
+    width: 100%;
+    justify-content: center;
+  }
+  [class*="tracks"] {
+    padding: 0;
+  }
 }
